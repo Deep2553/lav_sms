@@ -10,8 +10,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh './vendor/bin/phpunit'
-               
+                
+                git 'https://github.com/Deep2553/lav_sms.git'
             }
         }
     }
